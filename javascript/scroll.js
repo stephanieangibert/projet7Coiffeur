@@ -36,7 +36,7 @@ function colorHeader(){
 }   
 }
 icon.addEventListener("click",function(e){
-    nav.classList.add("responsive");
+    nav.classList.toggle("responsive");
     console.log(nav);
     e.preventDefault();
     console.log("ok");
