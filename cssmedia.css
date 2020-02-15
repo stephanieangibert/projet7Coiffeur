@@ -1,0 +1,114 @@
+@media (max-width:1200px){
+    #navigation a{
+        font-size: 2rem;
+        padding: 1rem 5rem;
+    }
+
+}
+@media (max-width:768px){
+    #navigation{
+        clip-path: polygon(0% 0%,100% 0%,100% 100%,0% 100%);
+    }
+    #navigation a:not(:nth-child(5)){
+        display: none;
+     
+    }
+    .icon{
+        display: block;
+         position: absolute;
+         right: -3.6rem;
+        top: -1.6rem;   
+        cursor: pointer;
+        font-size: 3rem!important;
+        color: #373737;
+    }
+    #navigation.responsive{
+        height: 38rem;
+    }
+    #navigation.responsive a:not(:nth-child(5)){
+        display: block;
+        text-align: center;
+        background:#F0Ead6;
+        margin: 0;
+        position: relative;
+        top:4rem;
+        font-size: 3rem;
+       
+    }
+
+}
+@media (max-width:1200px){
+    header{
+        height: 90vh;
+    }
+    h1{
+        top:27rem;
+        font-size: 9rem;
+    }
+    header h2{
+        top:27rem;
+        font-size: 3.5rem;
+    }
+    header #arrow{
+        height: 6rem;
+        width: 6rem;
+        top:80%;
+        font-size: 3.5rem;
+        line-height: 6rem;
+    }
+}
+@media (max-width:992px){
+    header{
+        height: 90vh;
+        
+    }
+    h1{
+        font-size: 7rem;
+        top:20rem;
+    }
+    header h2{
+        font-size: 3.5rem;
+        top:23rem;
+    }
+    header #arrow{
+       
+        top:70%;
+        
+    }
+}
+@media (max-width:768px){
+    header{
+        height: 73vh;
+    }
+    h1{
+        top:27rem;
+        font-size: 6.2rem;
+    }
+    header h2{
+        top:26rem;
+        font-size:2.4rem;
+        width: 80%;
+        margin: auto;
+    }
+    header #arrow{
+        height: 5rem;
+        width: 5.5rem;
+        top:65%;
+        font-size: 2rem;
+        line-height: 5rem;
+    }
+
+}
+@media(max-width:690px){
+    h1{
+        font-size: 5rem;
+    }
+    
+}
+@media(max-width:535px){
+    h1{
+        font-size: 3rem;
+    }
+    
+}
+

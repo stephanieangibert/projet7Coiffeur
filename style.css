@@ -1,0 +1,473 @@
+html{
+    font-size: 10px;
+   
+}
+body{
+    margin: 0;
+    font-family: 'lato',sans-serif;
+    background-color: #F7F7F7;
+}
+/* NAVIGATION */
+#navigation{
+    position: fixed;
+    z-index:40;
+    width: 100%;
+    background-color: #F0Ead6;
+    text-align: center;
+    height: 10rem;
+    clip-path: polygon(0% 0%,100% 0%,100% 70%,55% 70%,50% 90%,45% 70%,0% 70%);
+    transition: all 0.4s ease-in-out;
+}
+#navigation a{
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: 'Kaushan Script';
+    margin: auto;
+    padding: 1rem 5rem;
+    line-height: 6rem;
+    color:#373737;
+}
+#navigation a:active{
+    font-size: 4rem;
+}
+.icon{
+    display: none;
+}
+/* header */
+header{
+    height: 100vh;
+    width: 100%;
+    background: url("ressources/kamile-leo-wKo5Rzv0_aM-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+h1{
+    text-align: center;
+    margin: 0;
+    color:white;
+    position: relative;
+    top:30rem;
+    font-family: 'Kaushan Script';
+    font-size: 11rem;
+}
+header h2{
+    text-align: center;
+    margin: 0;
+    color:#F8F7F7;
+    position: relative;
+    top:32rem;
+    letter-spacing: 0.2rem;
+    font-size: 5rem;
+    font-family: 'Abril FatFace';
+}
+header #arrow{
+    color:black;
+    height: 8rem;
+    width: 8rem;
+    position: absolute;
+    top:90%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    text-decoration: none;
+    border-radius:50%;
+    font-size: 4rem;
+    line-height: 8rem;
+    background: white;
+    box-shadow: 0 0 0 0 #fff;
+    animation: pulse 1.3s infinite;
+
+}
+@keyframes pulse{
+    to{
+        box-shadow: 0 0 0 1rem rgba(255,255,255,0.01);
+    }
+}
+.section-about{
+    background-color: #f7f7f7;
+    padding-bottom: 10rem;
+    margin-bottom: 3rem;
+   
+
+}
+.contient p{
+    font-size: 110%;
+    letter-spacing: 0.1rem;
+}
+
+.centerH{
+    text-align: center;
+    margin-bottom: 8rem;
+}
+.titreAbout{
+    font-size: 4rem;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: 700;
+    background-image: linear-gradient(to right,#373737,#c0b283);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 0.02rem;
+    padding-top: 5rem;
+  
+}
+.row{
+    max-width: 114rem;
+    margin: 0 auto;
+}
+.soustitreAbout{
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.paragraphe{
+    font-size: 1,9rem;
+}
+.paragraphe :not(:last-child){
+    margin-bottom: 3rem;
+}
+.row{
+    width: 50%;
+}
+.row:last-child{
+    
+    text-align: center;
+}
+.composition{
+    position: relative;
+   
+    width: 100%;
+    height: 110px;
+   
+}
+.composition_photo{
+    width: 45%;
+    box-shadow: 0,1.5rem,4rem,rgba(0,0,0,0.4rem);
+    border-radius: 2px;    
+    z-index: 10;
+    transition: all .2s;
+    outline-offset:2rem;
+  
+}
+.contient{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
+}
+.col-1-of-2{
+    width: 70%;
+    margin: 0 auto;
+}
+.composition_photo1{
+    position: absolute;
+    top: -100%;
+    left: -10%;
+   
+}
+
+.composition_photo3{
+    position: absolute;
+    top: -20%;
+    left: 0%;
+   
+}
+.composition_photo2{
+    position: absolute;
+   left: 20%;
+   top: 20%;
+    
+}
+.composition_photo:hover{
+    outline:1.5rem solid #c0b283;
+    transform:scale(1.05) translateY(-0.5rem);
+    box-shadow: 0 2.5rem 4rem rgba(0,0,0,0.5);
+    z-index: 30;
+}
+.composition:hover .composition_photo:not(:hover){
+    transform: scale(0.85);
+}
+#tarifs{
+    border:1px dashed rgba(209,174,59);
+}
+#tarifs h2{
+    text-align: center;
+    background: #f7f7f7;
+    font-size: 5.5rem;
+    background-image: linear-gradient(to right,black,rgba(255,239,185));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent;
+    margin: 0;
+    padding-top: 4rem;
+}
+.container{
+    width: 100%;
+    height: 60rem;
+    display: flex;  
+    background: #f7f7f7;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 8rem;
+
+}
+#containerflex{
+    width: 30rem;
+    height: 45rem;
+    margin: 2rem;
+    transition: .2s ease-in-out;
+    border: 1px dashed #373737;
+}
+#containerflex:nth-child(1){
+    border: 1px dashed  #373737;
+}
+#containerflex:nth-child(2){
+    border:none;
+}
+#containerflex:nth-child(3){
+    border: 1px dashed  #373737;
+}
+.head{
+    width: 100%;
+    height: 10rem;
+    text-align: center;
+    color:#373737;
+    background: #F0Ead6;
+}
+.head p{
+    margin: 0;
+    font-size: 3rem;
+    line-height: 10rem;
+    font-family: 'Abril FatFace';
+}
+.contenu{
+    margin: auto;
+    text-align: center;
+    font-size: 1.6rem;
+    background:#F0Ead6;
+    height: 6rem;
+    line-height: 6rem;
+}
+.prix{
+    margin: 0;
+    height: 11rem;
+    background:#F0Ead6;
+
+}
+.prix p{
+    margin: 0 auto;
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'Abril FatFace';
+    line-height: 11rem;
+}
+#containerflex:nth-child(2) .head{
+    background: #373737 ;
+    color:#FFD700;
+}
+#containerflex:nth-child(2) .contenu{
+    background: #373737 ;
+    color:#FFD700;
+}
+#containerflex:nth-child(2) .prix{
+    background: #373737 ;
+    color:#FFD700;
+}
+#containerflex:hover{
+    transform: scale(1.05);
+}
+#phraseSlide{
+    height: 60rem;
+    width: 100%;
+    border-top: 1px dashed rgba(209,174,59);
+    background: url("ressources/barbershop-4484297_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.cadre{
+    position: absolute;
+    top:25%;
+    left:25%;
+    /* transform: scale(-50%,-50%);
+    -webkit-transform:scale(-50%,-50%); */
+    width: 75rem;
+    height: 40rem;
+    border-radius: 2px;
+    background: rgba(55,55,55,0.3);
+    color: white;
+}
+.centre{
+    position: absolute;
+    top:50%;
+    left: 0;
+    right: 0;
+    margin-top: -2.25rem;
+   
+}
+.caroussel{
+    position: relative;
+    text-align: center;
+    line-height: 45px;
+    width: 100%;
+    height: 4.5rem;
+}
+.caroussel .changeHidden{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 110rem;
+    overflow: hidden;
+    height: 11rem;
+    line-height: 13rem;
+    margin: auto;
+}
+.caroussel .changeHidden .contenant{
+    position: relative;
+    animation:carousel 8s ease-in-out infinite;
+}
+.caroussel .changeHidden .element{
+    font-weight: 700;
+    font-size: 5rem;
+}
+@keyframes carousel{
+    0%,20%{
+        transform: translateY(0);
+    }
+    25%,45%{
+        transform: translateY(-13rem);
+    }
+   50%,70%{
+        transform: translateY(-26rem);
+    }
+    75%,95%{
+        transform: translateY(-39rem);
+    }
+    100%{
+        transform: translateY(-52rem);
+    }
+}
+#team h3{
+    text-align: center;
+    background: #f7f7f7;
+    font-size: 5.5rem;
+    background-image: linear-gradient(to right,black,rgba(255,239,185));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent;
+    margin: 0;
+    padding-top: 4rem;
+
+}
+.flexTeam{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45rem;
+  
+}
+.team{
+    width: 25rem;
+    text-align: center;
+    height: 45rem;
+    overflow: hidden;
+    margin: 3rem;
+    position: relative;
+    z-index: 1;
+    
+}
+.pictureTeam1{
+    background: url("ressources/edgar-m-nd0AqhGk5ZI-unsplash.jpg");
+    width: 100%;
+    height: 80%;
+    background-size: cover;
+    background-position: center;  
+    z-index: 1;
+   
+}
+.pictureTeam2{
+    background: url("ressources/antonio-reynoso-icqiU7srQIk-unsplash.jpg");
+    width: 100%;
+    height: 80%;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+.pictureTeam3{
+    background: url("ressources/craig-mckay-jmURdhtm7Ng-unsplash.jpg");
+    width: 100%;
+    height: 80%;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+   
+   
+}
+.pictureTeam1:hover, .pictureTeam2:hover, .pictureTeam3:hover{
+    transform: scale(1.3);
+    transition: all 0.4s ease-in-out;
+   
+}
+.headTeam{
+   
+    background-color: #F0Ead6;
+    width: 100%;
+    height:20%;   
+    z-index: 2;
+    position: relative;
+    margin: 0;
+   
+}
+.headTeam h4{
+   
+   margin: 0;
+   padding-top: 2rem;
+   z-index: 2;
+   color: black;
+   font-weight: bold;
+   text-align: center;
+   font-size: 140%;
+}
+.headTeam p{
+    color: black;
+   font-weight: bold;
+   text-align: center;
+   font-size: 120%;
+
+}
+#contact{
+    height: 20rem;
+    width: 100%;
+    border-top: dashed 1px rgba(209,174,59);
+}
+#contact h2{
+    font-size: 10rem;
+    text-align: center;
+}
+#contact h3{
+    font-size: 5rem;
+    text-align: center;
+    background: #f7f7f7;
+    font-size: 5.5rem;
+    background-image: linear-gradient(to right,black,rgba(255,239,185));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent;
+
+}
+.flexMedias{
+    display: flex;
+    justify-content: center;
+}
+.medias a{
+    font-size: 10rem;
+    text-decoration: none;
+    margin: 2rem;
+    color: black;
+}
